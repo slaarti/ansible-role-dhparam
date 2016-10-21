@@ -1,0 +1,3 @@
+---
+dhparam_directory: "/etc/ssl/certs"
+dhparam_filename: "dhparam.pem"
