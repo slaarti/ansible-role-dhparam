@@ -1,0 +1,17 @@
+galaxy_info:
+  author: slaarti
+  description: Generate strong Diffie-Hellman key exchange parameters.
+  license: Unlicense
+  min_ansible_version: 1.2
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+
+  galaxy_tags:
+    - web
+
+dependencies: []
