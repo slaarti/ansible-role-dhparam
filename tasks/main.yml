@@ -1,0 +1,12 @@
+---
+- name: Ensure latest OpenSSL is installed
+  apt:
+    pkg: openssl
+    state: latest
+    update_cache: yes
+
+- name: Generate Diffie-Hellman parameters
+  command: /usr/bin/openssl dhparam -out "{{ dhparam_filename }}" 4096
+  args:
+    chdir: "{{ dhparam_directory }}"
+    creates: "{{ dhparam_directory }}/{{ dhparam_filename }}"
